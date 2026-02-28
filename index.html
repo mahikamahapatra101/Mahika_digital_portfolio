@@ -1,73 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <Link rel = "stylesheet" href = "styles.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Mahika's Tech Portfolio</title>
-  </head>
-
-  <body>
-    <header>
-      <h2>
-        Check Out Some of My Java Programs:
-      </h2>
-      <nav class = "site-nav">
-       <ul>
-        <li><a href="https://github.com/mahikamahapatra101/Program11"> Luggage Transportation Program </a></li>
-        <li><a href="https://github.com/mahikamahapatra101/Program12"> Movie Database Program </a></li>
-        <li><a href="https://github.com/mahikamahapatra101/P2_BST-Rotation"> BST Rotation Program </a></li>
-       </ul>
-
-      </nav>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <h2 class="brand">Mahika's Portfolio<span class="dot">.</span></h2>
+            <nav class="site-nav">
+                <a href="#skills">Skills</a>
+                <a href="#projects">Java Programs</a>
+                <a href="#extra">Extra Code</a>
+            </nav>
+        </div>
     </header>
 
     <main>
-      <section>  
-        <h1>Welcome to Mahika's Tech Portfolio</h1>
-        <p>
-          Check my Linkedin out to see to see my portfolio and background in more detail!
-        </p>
-        <a href = "https://www.linkedin.com/in/mahika-mahapatra-it/" >Mahika's Linkedin</a> 
-      </section>
-      <section>
-        <h2>Top Skills:</h2>
-        <p>(Hard/Technical)</p>
-        <h3>Bash</h3>
-        <p>Developed Bash scripts to automate the creation and management of test directories for the JUnit testing framework. </p>
-        <h3> Java</h3>
-        <p>Developed and implemented core Java applications utilizing various data structures, including Binary Search Trees (BSTs), Stacks (using push()/pop() operations), and Queues (using enqueue()/dequeue() operations).</p>
-        <h3>R</h3>
-        <p>Analyzed large datasets to identify key trends, have been using R for data processing and visualization.</p>
+        <section class="hero">
+            <div class="container hero-content">
+                <h1>Welcome to My Portfolio</h1>
+                <p class="hero-subhead">Java Developer | Bash Scripter | Data Analyst</p>
+                <div class="hero-btns">
+                    <a href="https://www.linkedin.com/in/mahika-mahapatra-it/" class="btn btn-dark">LinkedIn</a>
+                    <a href="https://github.com/mahikamahapatra101" class="btn btn-outline">GitHub</a>
+                </div>
+            </div>
+        </section>
 
+        <section id="skills" class="features">
+            <div class="container">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="features-grid">
+                    <div class="feature">
+                        <div class="icon">B</div>
+                        <h3>Bash</h3>
+                        <p>Automated JUnit testing and directory management.</p>
+                        <p><strong>Recursively listed directory:</strong></p>
+                        <img src="images/Bash_Tree_Function.jpg" alt="Tree Function" style="max-width:100%; height:auto; border:1px solid #ddd;">
+                    </div>
+                    <div class="feature">
+                        <div class="icon">J</div>
+                        <h3>Java</h3>
+                        <p>Implemented BSTs, Stacks, and Queues.</p>
+                    </div>
+                    <div class="feature">
+                        <div class="icon">R</div>
+                        <h3>R</h3>
+                        <p>Data processing and visualization for large datasets.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-      </section>
-      <section>
-        <h2> Bash</h2>
-        <p> Look at the recursively listed contents of directories from one of my bash projects (tree function):</p>
-        <img src = "images/Bash_Tree_Function.jpg" alt = "Tree Function" width ="190" height="500">
-         </section>
-
-     <section>
-      <h2>Arduino</h2>
-      <p> I have a basic understanding of Arduino. I have programed an Arduino with a Raspberry Pi. Check out one of the links in the bottom of the page to see the code!</p>
-
-      <h2> Scratch</h2>
-      <p> I have also coded on scratch. I put a link to two of my favorite old scratch codes from the past in the bottom of the page. Check it out!</p>
-   
-       <h2>More Programs:</h2>
-       <p>Click to see more of my java programs!</p>
-       <a href = "https://github.com/mahikamahapatra101">Link to Github</a>
-     </section>
-
+        <section id="projects" class="secondary">
+            <div class="container">
+                <h2 class="section-title">Java Programs</h2>
+                <div class="secondary-grid">
+                    <div class="card">
+                        <div class="card-text">
+                            <h3>GitHub Repositories</h3>
+                            <ul>
+                                <li><a href="https://github.com/mahikamahapatra101/Program11" style="color:#3a88a8;">Luggage Transportation Program</a></li>
+                                <li><a href="https://github.com/mahikamahapatra101/Program12" style="color:#3a88a8;">Movie Database Program</a></li>
+                                <li><a href="https://github.com/mahikamahapatra101/P2_BST-Rotation" style="color:#3a88a8;">BST Rotation Program</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-text">
+                            <h3>Project Overview</h3>
+                            <p>These programs demonstrate my ability to handle complex logic, file I/O, and data structure manipulation in Java.</p>
+                            <a href="https://github.com/mahikamahapatra101" class="btn btn-dark">See All GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer>
-      <p> &copy; 2026 Mahika's Tech Portfolio. All rights reserved.</p>
-      <ul>
-       <li> <a href = "https://docs.google.com/document/d/1-kluuHP-yjY5hTXHt_0a-yC5mXmQOWCkrtfjyoEWK2w/edit">Arduino Code</a> </li>
-        <li> <a href = "https://scratch.mit.edu/projects/625115153/">Scratch Code - Disco Doggies</a> </li>
-        <li> <a href = "https://scratch.mit.edu/projects/613599312">Scratch Code - Adventure Story</a> </li>
-      </ul>
+
+    <footer id="extra" class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-left">
+                <p>&copy; 2026 Mahika's Tech Portfolio. All rights reserved.</p>
+            </div>
+            <div class="footer-cols">
+                <div class="footer-col">
+                    <h4>Favorite codes from years back:</h4>
+                    <a href="https://docs.google.com/document/d/1-kluuHP-yjY5hTXHt_0a-yC5mXmQOWCkrtfjyoEWK2w/edit">Arduino Code</a>
+                    <a href="https://scratch.mit.edu/projects/625115153/">Scratch: Disco Doggies</a>
+                    <a href="https://scratch.mit.edu/projects/613599312">Scratch: Adventure Story</a>
+                </div>
+            </div>
+        </div>
     </footer>
-  </body>
+</body>
 </html>
